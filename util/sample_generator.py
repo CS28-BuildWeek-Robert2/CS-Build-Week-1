@@ -82,7 +82,7 @@ class World:
             # Create a room in the given direction
             room = Room(room_count, "A Generic Room", "This is a generic room.", x, y)
             # Note that in Django, you'll need to save the room after you create it
-
+            
             # Save the room in the World grid
             self.grid[y][x] = room
 
@@ -91,9 +91,9 @@ class World:
                 previous_room.connect_rooms(room, room_direction)
 
             # Update iteration variables
+            room.save()
             previous_room = room
             room_count += 1
-
 
 
     def print_rooms(self):
