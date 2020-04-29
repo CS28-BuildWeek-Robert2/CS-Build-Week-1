@@ -13,6 +13,13 @@ import json
 
 @csrf_exempt
 @api_view(["GET"])
+def view_rooms(request):
+    rooms = Room.objects.values()
+    all_rooms = list(rooms)
+    return JsonResponse({"all_rooms": all_rooms}, safe=True)
+
+@csrf_exempt
+@api_view(["GET"])
 def initialize(request):
     user = request.user
     player = user.player
