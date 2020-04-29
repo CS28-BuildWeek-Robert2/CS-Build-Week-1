@@ -29,6 +29,7 @@ DEBUG = config('DEBUG', cast=bool)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='localhost')
 
+APPEND_SLASH = False
 
 # Application definition
 
@@ -97,7 +98,10 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-DATABASES['default'] = dj_database_url.config()
+
+# Database for heroku
+db_from_env = dj_database_url.config()
+DATABASES['default'].update(db_from_env)
 
 
 # Password validation

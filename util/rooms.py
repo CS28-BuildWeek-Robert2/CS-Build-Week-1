@@ -1,0 +1,46 @@
+explanation = [
+    'Four skeletons dressed in aged clothing and rusting armor lie on the floor in the room against the walls.',
+    'The strong, sour-sweet scent of vinegar assaults your nose as you enter this room.',
+    'The entire floor of the room has fallen into a second room beneath it.',
+    'You open the door to confront a room of odd pillars.',
+    'This small room is lined with benchlike seats on all the walls.',
+    'This hall stinks with the wet, pungent scent of mildew.',
+    'You open the door and a gout of flame rushes at your face. ',
+    'Rats inside the room shriek when they hear the door open, then they run in all directions from a putrid corpse lying in the center of the floor. ',
+    ' Looking into the room, you see other exits blocked by animal carcasses.',
+    'Many doors of varied shape, size, and design fill the room ahead.',
+    'A cluster of low crates surrounds a barrel in the center of this chamber.',
+    'This tiny room holds a curious array of machinery. Winches and levers project from every wall, and chains with handles dangle from the ceiling.',
+    'This chamber holds an odd contraption of metal and wood.',
+    'This room holds six dry circular basins large enough to hold a man and a dry fountain at its center.',
+    'You find this chamber lit dimly by guttering candles that squat in small hills of melted wax.',
+    'This room is a tomb.',
+    'The scent of earthy decay assaults your nose upon peering through the open door to this room.',
+    'You enter a small room and your steps echo.',
+    'This could be a training room for combat.'
+]
+
+
+title = [
+    'Hallowward Sanctuary',
+    'Spirespell Nest',
+    'Wolflance Escape',
+    'Scarlet Hideaway',
+    'Bitterhorn Lair',
+    'Ashborn Haven',
+    'Infinity Retreat',
+    'Blackword Cover',
+    'Autumn Sanctum',
+    'Fire Lair',
+    'Retribution Den',
+    'Saurland Base',
+    'Trident Cave',
+    'Dreamridge Labyrinth',
+    'Lawful State',
+    'Shrews Empire',
+    'Unnamed Angels Province',
+    'Bronze Cemetaries',
+    'Celestial Hideout',
+    'Ivory Harbor',
+    'Shadow Province'
+]
