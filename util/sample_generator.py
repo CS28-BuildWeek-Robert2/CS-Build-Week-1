@@ -4,7 +4,8 @@
 # You can modify generate_rooms() to create your own
 # procedural generation algorithm and use print_rooms()
 # to see the world.
-
+import random
+from rooms import title, explanation
 
 class Room:
     def __init__(self, id, name, description, x, y):
@@ -80,9 +81,11 @@ class World:
                 direction *= -1
 
             # Create a room in the given direction
-            room = Room(room_count, "A Generic Room", "This is a generic room.", x, y)
+            room_title = random.choice(title)
+            room_explanation = random.choice(explanation)
+            room = Room(room_count, room_title, room_explanation, x, y)
             # Note that in Django, you'll need to save the room after you create it
-
+            
             # Save the room in the World grid
             self.grid[y][x] = room
 
@@ -91,9 +94,9 @@ class World:
                 previous_room.connect_rooms(room, room_direction)
 
             # Update iteration variables
+    
             previous_room = room
             room_count += 1
-
 
 
     def print_rooms(self):
@@ -152,9 +155,9 @@ class World:
 
 
 w = World()
-num_rooms = 44
-width = 8
-height = 7
+num_rooms = 100
+width = 10
+height = 10
 w.generate_rooms(width, height, num_rooms)
 w.print_rooms()
 
